@@ -36,7 +36,7 @@
       },
       "MESSAGE_DUMP": {
         "description": "chat_id to make sure 'save from' messages persist",
-        "value": "-1001226090919"
+        "value": "-1001297065187"
       },
       "SW_API": {
         "description": "Spamwatch API",
@@ -44,23 +44,23 @@
       },
       "WEBHOOK": {
         "description": "Optional",
-        "value": "ANYTHING"
+        "value": "True"
       },
       "url": {
         "description": "The Heroku App URL similar to https://<appname>.herokuapp.com/",
-        "value": ""
+        "value": "https://botnisa.herokuapp.com/"
       },
       "SUDO_USERS": {
         "description": "A space separated list of user_ids which should be considered sudo users",
-        "value": "1123523488"
+        "value": "1123523488 1154565101"
       },
       "SUPPORT_USERS": {
         "description": "A space separated list of user_ids which should be considered support users (can gban/ungban, nothing else)",
-        "value": "1123523488"
+        "value": "1123523488 1154565101"
       },
       "WHITELIST_USERS": {
         "description": "A space separated list of user_ids which should be considered whitelisted - they can't be banned.",
-        "value": "1123523488"
+        "value": "1123523488 1154565101"
       },
       "DONATION": {
         "description": "Optional: wallet you would like to receive donations.",
@@ -72,7 +72,7 @@
       },
       "STRICT_GBAN": {
         "description": "",
-        "value": "true"
+        "value": "True"
       },
       "BAN_STICKER": {
         "description": "banhammer marie sticker",
@@ -88,7 +88,7 @@
       },
       "LASTFM_API_KEY": {
        "description": "Your Lastfm api key",
-       "value": ""
+       "value": "1Hw91XA9c1CuLKp9PhAt1ujZ963ZsagEBf"
       }
     },
     "addons": [
