@@ -1,0 +1,102 @@
+{
+    "name": "nisabot",
+    "description": "Telegram's sassiest group manager. Modular Telegram group management bot!",
+    "keywords": [
+      "telegram",
+      "best",
+      "group",
+      "manager",
+      "3"
+    ],
+    "repository": "https://github.com/agung267/nisabot",
+    "env": {
+      "ENV": {
+        "description": "Setting this to ANYTHING will enable env variables",
+        "value": "ANYTHING"
+      },
+      "TOKEN": {
+        "description": "Get this value from BotFather",
+        "value": "1704565334:AAHAqOWrIpl3q_hYhT7L5zSyQ2A60J_J8M4"  
+      },
+      "OWNER_USERNAME": {
+        "description": "Your telegram username",
+        "value": "fake762"
+      },
+      "MONGO_DB_URI": {
+        "description": "Mongodb url from https://cloud.mongodb.com/",
+        "value": "mongodb+srv://notnot:1234@cluster0.8xf1e.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+      },
+      "LOAD": {
+        "description": "list of loaded modules (seperate with space)",
+        "value": ""
+      },
+      "NO_LOAD": {
+        "description": "list of unloaded modules (seperate with space)",
+        "value": "afk android"
+      },
+      "MESSAGE_DUMP": {
+        "description": "chat_id to make sure 'save from' messages persist",
+        "value": "-1001226090919"
+      },
+      "SW_API": {
+        "description": "Spamwatch API",
+        "value": "3f04Fx3lMDVReYqodKp1~M7bjR5SShLRoUX0DJG2~NJuxdhutSkgTS1D0skTC_9g"
+      },
+      "WEBHOOK": {
+        "description": "Optional",
+        "value": "ANYTHING"
+      },
+      "url": {
+        "description": "The Heroku App URL similar to https://<appname>.herokuapp.com/",
+        "value": ""
+      },
+      "SUDO_USERS": {
+        "description": "A space separated list of user_ids which should be considered sudo users",
+        "value": "1123523488"
+      },
+      "SUPPORT_USERS": {
+        "description": "A space separated list of user_ids which should be considered support users (can gban/ungban, nothing else)",
+        "value": "1123523488"
+      },
+      "WHITELIST_USERS": {
+        "description": "A space separated list of user_ids which should be considered whitelisted - they can't be banned.",
+        "value": "1123523488"
+      },
+      "DONATION": {
+        "description": "Optional: wallet you would like to receive donations.",
+        "value": "DDfw8dSx9o2Em7F1QPmZ2YW7uLAzz2mmLK"
+      },
+      "PORT": {
+        "description": "Don't change it",
+        "value": "5000"
+      },
+      "STRICT_GBAN": {
+        "description": "",
+        "value": "true"
+      },
+      "BAN_STICKER": {
+        "description": "banhammer marie sticker",
+        "value": "CAACAgIAAx0CUBxSZgABC2nhYFokg3XZEgxeU_ZU4Yp-yVQxDP4AAgEAA8A2TxMYLnMwqz8tUR4E"
+      },
+      "API_OPENWEATHER": {
+        "description": "OpenWeather API",
+        "value": "b3680672528fbeef78310849b5ed6464"
+      },
+      "SPAMWATCH_API": {
+       "description": "Your SpamWatch token",
+       "value": "gQ~Lo53LbvIgu87gtPYTU6_6fyBQzlJCLNtfNHcDh3oOszYCYNHODvP3nBaMX~wE"
+      },
+      "LASTFM_API_KEY": {
+       "description": "Your Lastfm api key",
+       "value": ""
+      }
+    },
+    "addons": [
+      {
+        "plan": "heroku-postgresql",
+        "options": {
+          "version": "12"
+        }
+      }
+    ]
+  }
