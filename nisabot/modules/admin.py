@@ -24,7 +24,7 @@ from telegram.ext import CommandHandler, Filters
 from telegram.utils.helpers import mention_html
 
 from nisabot import dispatcher
-from nisabot.modules.connection import connected
+from nisabot.modules.connections import connected
 from nisabot.modules.disable import DisableAbleCommandHandler
 from nisabot.modules.helper_funcs.admin_rights import (
     user_can_changeinfo,
