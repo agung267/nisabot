@@ -14,27 +14,18 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+import datetime
 import importlib
-import traceback
-import html
-import json
 import re
-import requests
-from typing import Optional
+import wikipedia
+from typing import Optional, List
 
-from telegram import Message, Chat, User
+from telegram import Message, Chat, Update, Bot, User
 from telegram import ParseMode, InlineKeyboardMarkup, InlineKeyboardButton
-from telegram.error import Unauthorized
-from telegram.ext import (
-    CommandHandler,
-    Filters,
-    MessageHandler,
-    CallbackQueryHandler,
-)
-from telegram.ext.dispatcher import DispatcherHandlerStop
+from telegram.error import Unauthorized, BadRequest, TimedOut, NetworkError, ChatMigrated, TelegramError
+from telegram.ext import CommandHandler, Filters, MessageHandler, CallbackQueryHandler
+from telegram.ext.dispatcher import run_async, DispatcherHandlerStop, Dispatcher
 from telegram.utils.helpers import escape_markdown
-from sqlalchemy.exc import SQLAlchemyError, DBAPIError
-
 
 from nisabot import (
     dispatcher,
