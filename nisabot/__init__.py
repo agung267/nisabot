@@ -26,7 +26,7 @@ from dotenv import load_dotenv
 logging.basicConfig(
     format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
     handlers=[
-        logging.FileHandler("ubotindo-log.txt"),
+        logging.FileHandler("nisabot-log.txt"),
         logging.StreamHandler(),
     ],
     level=logging.INFO,
